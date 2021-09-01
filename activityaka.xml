@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0B1B2F"
+    android:orientation="vertical"
+    tools:context="com.example.hp.womenshealth.BMI_Activity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#7ff440"
+        android:textSize="25sp"
+        android:text="@string/bmi_calculator_body_mass_index"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:hint="Height in inch"
+        android:id="@+id/etHeight"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:hint="Weight in KG"
+        android:id="@+id/etWeight"
+        android:layout_below="@+id/etHeight"
+        android:layout_alignLeft="@+id/etHeight"
+        android:layout_alignStart="@+id/etHeight"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:onClick="show"
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_login"
+        android:id="@+id/btnCal"
+        android:layout_below="@+id/etWeight"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/calculation"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/btnCal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:textColor="#ffffff"
+            android:id="@+id/tvShow"
+            android:layout_below="@+id/btnCal"
+            android:layout_alignLeft="@+id/btnCal"
+            android:layout_alignStart="@+id/btnCal"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+
+
+
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="20dp"
+            android:layout_below="@+id/calculation"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            android:background="#1eab8c"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

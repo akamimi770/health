@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Womens Health</string>
+    <string name="bmi_calculator_body_mass_index">এটা BMI Calculator । এর মানে body mass index। এটার মাধ্যমে আপনি জানতে পারবেন আপনি কি অতিরিক্ত মোটা না চিকন না স্বাস্থ্যবান ।আপনাকে শুধু আপনার ওজন আর উচ্চতা দিতে হবে ।</string>
+</resources>
+
